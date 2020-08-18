@@ -25,7 +25,9 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg fixed-top">
         <div className="container">
           <Link className="navbar-brand" to="/">
-            <h1 id="navlogotext">Boilerplate</h1>
+            <h1 id="navlogotext">
+              <img src={require("../assets/logo-light.png")} alt="logo" />
+            </h1>
           </Link>
           {/* Hamburger Menu for collapse */}
           <button
@@ -58,25 +60,41 @@ export default function Header() {
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"
+                  to="/"
                   id="navbarDropdown"
                   role="button"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Demo
                 </Link>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <Link className="dropdown-item" to="/">
-                    Dropdown Item
-                  </Link>
+                  <a
+                    className="dropdown-item"
+                    href="https://www.youtube.com/watch?v=ju1yQEDYIGE&feature=youtu.be&t=9"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Video
+                  </a>
                   <div className="dropdown-divider"></div>
-                  <Link className="dropdown-item" to="/">
-                    Below Divider
-                  </Link>
-                  <Link className="dropdown-item" to="/">
-                    Also Below Divider
-                  </Link>
+                  <a
+                    className="dropdown-item"
+                    href="https://www.beautiful.ai/player/-M4jwZFtvLl_CdaBXRxB/Ugli-Pitch-Deck"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Slides
+                  </a>
+                  <a
+                    className="dropdown-item"
+                    href="https://www.youtube.com/watch?v=Ts2JLvSOabs&feature=youtu.be"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                  >
+                    Pitch
+                  </a>
                 </div>
               </li>
             </ul>

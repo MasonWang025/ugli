@@ -1,9 +1,10 @@
 .navbar {
+  * {
+    user-select: none;
+  }
   background-color: $navbar-bg;
   font-size: 1.2em;
   font-weight: 400;
-  -webkit-box-shadow: 0 0.69rem 1rem rgba(0, 0, 0, 0.16) !important;
-  box-shadow: 0 0.69rem 1rem rgba(0, 0, 0, 0.16) !important;
 
   .navbar-brand {
     color: $navbar-text;
@@ -76,15 +77,21 @@
     color: $navbar-text-secondary;
   }
 
+  .dropdown-menu {
+    border-top: 5px $navbar-bg solid;
+    border-bottom: 3px $navbar-bg solid;
+    border-left: none;
+    border-right: none;
+  }
+
   .show > .dropdown-menu {
+    border: none;
     max-height: 100vh;
     visibility: visible;
     opacity: 1;
     pointer-events: all;
-
-    @include media("<=md") {
-      padding: 8px 0;
-    }
+    border-top: 8px $navbar-bg solid;
+    border-bottom: 8px $navbar-bg solid;
   }
 
   .dropdown-menu {
@@ -94,19 +101,14 @@
     padding: 0;
     max-height: 0;
     visibility: hidden;
-    transition: max-height 0.69s ease, opacity 0.45s ease, visibility 0.69s ease,
-      padding 0.75s ease;
+    transition: 0.69s ease;
     overflow: hidden;
-    opacity: 0;
-    padding: 8px 0;
     @include media("<=md") {
       padding: 0;
     }
   }
 
   .dropdown-menu {
-    -webkit-box-shadow: 0 0.69rem 1rem rgba(0, 0, 0, 0.25) !important;
-    box-shadow: 0 0.69rem 1rem rgba(0, 0, 0, 0.25) !important;
     background: $navbar-bg;
     .dropdown-divider {
       border: 0.069px $navbar-text-secondary solid;
