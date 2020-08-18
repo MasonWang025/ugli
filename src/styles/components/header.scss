@@ -125,6 +125,9 @@
       &:hover {
         background-color: $navbar-bg-secondary;
       }
+      &:focus {
+        background-color: $navbar-bg-secondary;
+      }
     }
   }
 
