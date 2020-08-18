@@ -7,12 +7,16 @@ import Footer from "./components/Footer";
 // Page components
 import Home from "./pages/Home";
 import About from "./pages/About";
+import Farmers from "./pages/Farmers";
+import Restaurants from "./pages/Restaurants";
 
 function App() {
   // routes
   const routes = [
     { path: "/", Component: Home },
     { path: "/about", Component: About },
+    { path: "/farmers", Component: Farmers },
+    { path: "/restaurants", Component: Restaurants },
   ];
 
   return (
