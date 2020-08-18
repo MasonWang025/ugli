@@ -57,6 +57,18 @@ export default function Header() {
                   About
                 </Link>
               </li>
+              <li className={"nav-item " + (path === "/farmers" && "active")}>
+                <Link className="nav-link" to="/farmers">
+                  For Farmers
+                </Link>
+              </li>
+              <li
+                className={"nav-item " + (path === "/restaurants" && "active")}
+              >
+                <Link className="nav-link" to="/restaurants">
+                  For Restaurants
+                </Link>
+              </li>
               <li className="nav-item dropdown">
                 <Link
                   className="nav-link dropdown-toggle"
