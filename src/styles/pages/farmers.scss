@@ -36,6 +36,11 @@
       }
     }
 
+    @include media("<=sm") {
+      border-bottom-left-radius: 50% 10%;
+      border-bottom-right-radius: 50% 10%;
+    }
+
     .filter {
       margin-top: 1.42em;
       .filter-input {

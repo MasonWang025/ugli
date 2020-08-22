@@ -7,7 +7,7 @@ export default function FarmersCards() {
 
   return (
     <div className="cards container">
-      <div className="row no-gutters justify-content-center">
+      <div className="row no-gutters justify-content-center mb-3">
         {farmerCards &&
           farmerCards.map((card, index) => (
             <FarmerCard

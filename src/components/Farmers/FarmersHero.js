@@ -6,7 +6,7 @@ export default function FarmersHero({ originalCards, setFarmerCards }) {
     <div className="hero">
       <div className="container">
         <h1>Restaurant Catalog</h1>
-        <h2>Search for Restaurants</h2>
+        <h2>Search {originalCards.length || 56}+ Restaurants By Ingredients</h2>
         <FarmersFilter
           originalCards={originalCards}
           setFarmerCards={setFarmerCards}
