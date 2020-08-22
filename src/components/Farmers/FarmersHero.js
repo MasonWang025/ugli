@@ -4,12 +4,14 @@ import FarmersFilter from "./FarmersFilter";
 export default function FarmersHero({ originalCards, setFarmerCards }) {
   return (
     <div className="hero">
-      <h1>Restaurant Catalog</h1>
-      <h2>Search for Restaurants</h2>
-      <FarmersFilter
-        originalCards={originalCards}
-        setFarmerCards={setFarmerCards}
-      />
+      <div className="container">
+        <h1>Restaurant Catalog</h1>
+        <h2>Search for Restaurants</h2>
+        <FarmersFilter
+          originalCards={originalCards}
+          setFarmerCards={setFarmerCards}
+        />
+      </div>
     </div>
   );
 }

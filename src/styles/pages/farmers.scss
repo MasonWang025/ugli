@@ -16,7 +16,7 @@
     user-select: none;
     color: white;
     padding: 2.55em 0.5em;
-    padding-bottom: 6.5em;
+    padding-bottom: 9em;
     h1 {
       font-size: 4.2em;
       font-weight: bold;
@@ -37,7 +37,7 @@
     }
 
     .filter {
-      margin-top: 0.9em;
+      margin-top: 1.42em;
       .filter-input {
         border: 0;
         max-width: 50vw;
@@ -48,7 +48,7 @@
           margin-bottom: 0.69em;
         }
         &.city {
-          width: 25vw;
+          width: 24vw;
         }
         &:focus {
           border: none;
@@ -67,6 +67,34 @@
           }
         }
       }
+    }
+  }
+
+  .cards {
+    margin-top: -6.9em;
+    .card {
+      margin: 5px;
+      height: 100%;
+      border: 0;
+      border-radius: 0.42em;
+      transition: 0.55s ease;
+      h1 {
+        font-size: 1.8em;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+      h2 {
+        font-size: 1.42em;
+        color: #444;
+        margin-bottom: 0.1em;
+      }
+      p {
+        margin: 0;
+        color: #666;
+      }
+    }
+    .col-12 {
+      margin-bottom: 0.69em;
     }
   }
 }

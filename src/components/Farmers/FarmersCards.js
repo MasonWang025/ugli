@@ -6,12 +6,19 @@ export default function FarmersCards() {
   const { farmerCards } = useContext(FarmersFilterContext);
 
   return (
-    <div>
-      cards
-      {farmerCards &&
-        farmerCards.map((card) => (
-          <FarmerCard name={card.name} city={card.city} />
-        ))}
+    <div className="cards container">
+      <div className="row no-gutters">
+        {farmerCards &&
+          farmerCards.map((card, index) => (
+            <FarmerCard
+              key={card.name + card.city + index}
+              docid={card.name + card.city + index}
+              name={card.name}
+              city={card.city}
+              ingredients={card.ingredients}
+            />
+          ))}
+      </div>
     </div>
   );
 }
