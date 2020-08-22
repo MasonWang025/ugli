@@ -10,13 +10,23 @@ import About from "./pages/About";
 import Farmers from "./pages/Farmers";
 import Restaurants from "./pages/Restaurants";
 
+// contexts
+import FarmersFilterContextProvider from "./contexts/FarmersFilterContext";
+
 function App() {
   // routes
   const routes = [
-    { path: "/", Component: Home },
-    { path: "/about", Component: About },
-    { path: "/farmers", Component: Farmers },
-    { path: "/restaurants", Component: Restaurants },
+    { path: "/", Component: <Home /> },
+    { path: "/about", Component: <About /> },
+    {
+      path: "/farmers",
+      Component: (
+        <FarmersFilterContextProvider>
+          <Farmers />
+        </FarmersFilterContextProvider>
+      ),
+    },
+    { path: "/restaurants", Component: <Restaurants /> },
   ];
 
   return (
@@ -25,9 +35,9 @@ function App() {
       <Header />
       <div className="App">
         <Switch>
-          {routes.map(({ path, Component, props }) => (
+          {routes.map(({ path, Component }) => (
             <Route key={path} exact path={path}>
-              <Component {...props} />
+              {Component}
             </Route>
           ))}
           <Redirect to="/" />
