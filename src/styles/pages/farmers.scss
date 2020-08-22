@@ -88,9 +88,20 @@
         color: #444;
         margin-bottom: 0.1em;
       }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
       p {
         margin: 0;
         color: #666;
+      }
+      .buttons {
+        margin-top: 0.45em;
+        .contact {
+          border-radius: 0.2em;
+        }
       }
     }
     .col-12 {

@@ -10,7 +10,6 @@
 
 // components
 @import "./components/header.scss";
-@import "./components/footer.scss";
 
 body {
   background: $body-bg;
@@ -61,5 +60,33 @@ a.underline {
     outline: none;
     box-shadow: none !important;
     border: none;
+  }
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  user-select: none;
+  padding: 0.42em 0.88em;
+  border-radius: 0.25em;
+  margin-right: 4.2px;
+  margin-bottom: 2px;
+  transition: 0.55s ease;
+  color: $dark;
+  background-color: #ddd;
+  &:hover {
+    color: $dark;
+    background-color: #ccc;
+    text-decoration: none;
+  }
+
+  &.primary {
+    background: $theme-darker;
+    color: white;
+    &:hover {
+      color: white;
+      text-decoration: none;
+      background: $theme;
+    }
   }
 }

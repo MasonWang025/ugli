@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function FarmersCard({ name, city, ingredients }) {
   return (
@@ -8,10 +9,20 @@ export default function FarmersCard({ name, city, ingredients }) {
           <h1>{name}</h1>
           <h2>{titleCase(city.trim())}</h2>
         </div>
-        <p className="card-body">
-          {ingredientsList(ingredients).slice(0, 13).join(", ")}
-          <span>, and more</span>
-        </p>
+        <div className="card-body">
+          <p>
+            {ingredientsList(ingredients).slice(0, 13).join(", ")}
+            <span>, and more</span>
+          </p>
+          <div className="buttons">
+            <Link to="/farmers" className="button primary">
+              Contact
+            </Link>
+            <Link to="/farmers" className="button">
+              View Profile
+            </Link>
+          </div>
+        </div>
       </div>
     </div>
   );

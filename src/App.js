@@ -2,7 +2,6 @@ import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 // Page components
 import Home from "./pages/Home";
@@ -43,7 +42,6 @@ function App() {
           <Redirect to="/" />
         </Switch>
       </div>
-      <Footer />
     </div>
   );
 }
