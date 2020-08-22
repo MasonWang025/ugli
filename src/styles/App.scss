@@ -54,3 +54,12 @@ a.underline {
     }
   }
 }
+
+.form-control {
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none !important;
+    border: none;
+  }
+}
