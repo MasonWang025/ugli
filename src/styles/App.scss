@@ -90,3 +90,14 @@ a.underline {
     }
   }
 }
+
+.underline--magical {
+  background-image: linear-gradient(
+    120deg,
+    $dark-dark 0%,
+    darken($dark, 2.5%) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 100% 0.25em;
+  background-position: 0 88%;
+}

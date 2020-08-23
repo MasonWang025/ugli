@@ -1,5 +1,6 @@
 .home {
   background: $body-bg;
+  color: white;
   .hero {
     background: url("../../assets/img/home-hero-bg.png");
     background-position: center;
@@ -15,6 +16,7 @@
     padding: 2.55em 0.5em;
     padding-bottom: 9em;
     text-align: center;
+    padding-top: 4.2em;
     img {
       height: 250px;
       filter: drop-shadow(2px 2px 10px rgba(255, 255, 255, 0.185));
@@ -41,6 +43,17 @@
       .button {
         font-size: 1.2em;
       }
+    }
+  }
+
+  .section {
+    padding: 4.2em 0;
+  }
+
+  .about-brief {
+    .section-heading {
+      font-size: 4em;
+      color: $theme-vibrant;
     }
   }
 }
