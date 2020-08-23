@@ -67,17 +67,18 @@
   }
 
   .section {
-    padding: 6.9em 0;
+    padding: 2.69em 0;
   }
 
   .about-brief {
-    .section-heading {
-      user-select: none;
-      font-size: 4em;
-      color: $theme-vibrant;
-    }
-    .button {
-      box-shadow: -4.2px 4.69px rgba($dark-dark, 0.7);
-    }
+    border-bottom: 2px $dark dashed;
+  }
+  .section-heading {
+    user-select: none;
+    font-size: 4em;
+    color: $theme-vibrant;
+  }
+  .button {
+    box-shadow: -4.2px 4.69px rgba($dark-dark, 0.7);
   }
 }

@@ -5,7 +5,7 @@ export default function AboutBrief() {
   return (
     <div className="about-brief section">
       <div className="container">
-        <div className="row">
+        <div className="row mb-3">
           <div className="col-12 col-lg-7 text-center text-lg-left">
             <h1 className="section-heading">
               <span className="underline--magical">
