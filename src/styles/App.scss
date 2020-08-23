@@ -25,7 +25,7 @@ body {
 }
 
 .page {
-  margin-top: 64px;
+  margin-top: $navbar-height;
 }
 
 // underline link
@@ -86,7 +86,7 @@ a.underline {
     &:hover {
       color: white;
       text-decoration: none;
-      background: $theme;
+      background: $theme-darkest;
     }
   }
 }
