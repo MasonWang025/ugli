@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="home page">
       <Hero />
-      <div className="my-5">
+      <div className="py-5">
         <div className="pt-3">
           <AboutBrief />
         </div>
