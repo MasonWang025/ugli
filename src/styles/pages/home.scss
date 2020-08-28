@@ -78,6 +78,12 @@
     font-size: 4em;
     color: $dark-dark;
     font-weight: bold;
+    @include media("<=400px") {
+      font-size: 3.5em;
+    }
+    @include media("<=360px") {
+      font-size: 3em;
+    }
   }
   .button {
     box-shadow: -4.2px 4.69px rgba($dark-dark, 0.7);
